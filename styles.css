@@ -1,0 +1,92 @@
+/* ESTILO */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #801de1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TARJETA */
+.card {
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* FORMULARIO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+}
+
+input:focus {
+  border: 2px solid #801de1;
+  outline: none;
+}
+
+/* BOTON */
+button {
+  padding: 8px;
+  background-color: #801de1;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #66319a;
+}
+
+/* LIST */
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+/* PRODUCTO COMPRADO */
+.bought {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* BOTON ELIMINAR */
+.delete {
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.delete:hover {
+  background-color: black;
+}
+
+/* MENSAJE DE ERROR */
+#errorMessage {
+  color: #fd1b1b;
+}
+
