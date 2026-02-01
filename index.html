@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+   <!--  <head>
+        <meta charset="utf-8" />
+        <title>Phoenix editor</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+    </head> -->
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Supermercado - TUTI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Encabezado principal -->
+  <header>
+    <h1> Supermercado <br>🛒 TUTI 🛒</h1>
+    <p>Lista de compras</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+
+    <!-- Sección del formulario -->
+    <section class="card">
+      <h2>Agregar producto</h2>
+
+      <!-- Formulario de ingreso -->
+      <form id="productForm">
+        <!-- Campo nombre -->
+        <input 
+          type="text" 
+          id="productName" 
+          placeholder="Nombre del producto"
+        >
+
+        <!-- Campo cantidad -->
+        <input 
+          type="number" 
+          id="productQuantity" 
+          placeholder="Cantidad"
+        >
+
+        <!-- Botón agregar -->
+        <button type="submit">Agregar</button>
+
+        <!-- Mensajes de error -->
+        <p id="errorMessage"></p>
+      </form>
+    </section>
+
+    <!-- Sección lista de productos -->
+    <section class="card">
+      <h2>Lista de productos</h2>
+      <ul id="productList"></ul>
+    </section>
+
+    <!-- Contadores -->
+    <section class="card counters">
+      <p>Total: <span id="totalCount">0</span></p>
+      <p>Comprados: <span id="boughtCount">0</span></p>
+      <p>Pendientes: <span id="pendingCount">0</span></p>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Proyecto académico Ecotec - Programación Web</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
